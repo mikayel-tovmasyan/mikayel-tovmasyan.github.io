@@ -110,6 +110,7 @@ dd { margin-left: 0; }
 .paper-entry + .paper-entry { border-top: 1px solid var(--line); padding-top: 1.4rem; }
 .paper-entry h3 { font-size: 1.42rem; line-height: 1.4; margin-bottom: .6rem; }
 .paper-entry p { margin-bottom: 0; }
+.paper-entry .paper-description { margin-top: .85rem; line-height: 1.8; }
 .dated-list { margin-bottom: 1.3rem; }
 .dated-list > div { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: 1rem; padding: .8rem 0; }
 .dated-list dt { font-size: .82rem; color: var(--muted); }
