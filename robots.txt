@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mikayel-tovmasyan.github.io/sitemap.xml
