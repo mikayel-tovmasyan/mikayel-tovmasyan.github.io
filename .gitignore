@@ -12,3 +12,4 @@ screenshots/
 *.zip
 # Original supplied portrait is kept locally; the site uses its named asset copy.
 Passport photo_2.1.jpg
+Profile photo_Slack.png
