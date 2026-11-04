@@ -67,7 +67,8 @@ dd { margin-left: 0; }
 .dual-feature { border-top: 1px solid var(--accent); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .feature { padding: 2.8rem 3.2rem 2.6rem 0; display: flex; flex-direction: column; }
 .feature + .feature { border-left: 1px solid var(--line); padding: 2.8rem 0 2.6rem 3.2rem; }
-.feature h2 { font-size: clamp(1.6rem, 2.4vw, 2.1rem); }
+/* Keep both headings at the largest shared size that fits their columns. */
+.feature h2 { font-size: clamp(1.125rem, calc(2.15vw - .27rem), 1.42rem); }
 .feature > p:not(.eyebrow) { color: var(--muted); }
 .feature-evidence { margin-top: auto; padding-top: 1.4rem; }
 .feature-evidence h3 { font-size: 1.4rem; line-height: 1.4; margin-bottom: .6rem; }
@@ -166,8 +167,15 @@ dd { margin-left: 0; }
   .section-layout { grid-template-columns: 160px minmax(0, 1fr); gap: 2.5rem; }
   .feature { padding-right: 2rem; }
   .feature + .feature { padding-left: 2rem; }
+  .feature h2 { font-size: clamp(1.125rem, calc(2.15vw - .22rem), 1.42rem); }
   .course { grid-template-columns: 1fr; gap: .55rem; }
   .teaching-overview { gap: 2rem; }
+}
+@media (max-width: 1024px) {
+  .dual-feature { grid-template-columns: 1fr; }
+  .feature, .feature + .feature { padding: 2rem 0; border-left: 0; }
+  .feature + .feature { border-top: 1px solid var(--line); }
+  .feature h2 { font-size: 1.42rem; }
 }
 @media (max-width: 760px) {
   .wrap { width: calc(100% - 40px); }
@@ -188,10 +196,6 @@ dd { margin-left: 0; }
   .profile-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
   .profile-facts div + div { margin-top: 0; }
   .contact-link { font-size: .9rem; }
-  .dual-feature { grid-template-columns: 1fr; }
-  .feature, .feature + .feature { padding: 2rem 0; border-left: 0; }
-  .feature + .feature { border-top: 1px solid var(--line); }
-  .feature h2 { font-size: 1.9rem; }
   .feature-evidence { padding-top: .8rem; }
   .closing-note { padding: 2.5rem 0 3rem; }
   .footer-inner { flex-direction: column; gap: 1.2rem; padding: 1.8rem 0; }
