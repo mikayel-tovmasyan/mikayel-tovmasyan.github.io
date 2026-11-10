@@ -2,7 +2,7 @@
 
 A lightweight academic website for [mikayel-tovmasyan.github.io](https://mikayel-tovmasyan.github.io), presenting research and teaching with equal prominence. It uses ordinary HTML and shared CSS, with no JavaScript, third-party fonts, analytics, framework, package installation or build step. Abstracts expand using native HTML `<details>` elements.
 
-The academic content and downloadable PDF are based on the authoritative CV, version 38, dated **November 2, 2026**. Original CV sources, reference CVs and private working materials are kept outside this repository.
+The academic content and downloadable PDF are based on the authoritative CV, version 39, dated **November 10, 2026**. Original CV sources, reference CVs and private working materials are kept outside this repository.
 
 ## View locally
 
@@ -37,7 +37,7 @@ Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). Stop the server with
 
 - **CV:** replace `assets/Mikayel_Tovmasyan_CV.pdf` with the approved current PDF, retaining the filename. Update the `?v=` query on every CV link in the HTML pages when replacing the PDF so browsers request the current file. Do not edit the original CV through this repository. Update the date and page count in `cv.html`, its description and Open Graph description in `<head>`, any changed education/appointment summaries, and the provenance date in this README.
 - **Research:** edit `research.html` and corresponding homepage highlights. Preserve the distinction between published, revise-and-resubmit, working-paper and work-in-progress statuses. Check journal names and coauthors against the authoritative record. Keep the job-market paper's `<summary>` and abstract inside its `<details>` element. Other paper descriptions are displayed directly below their titles and coauthors using `<p class="paper-description">`. Use actual abstracts and public paper links; add local paper PDFs only when approved for release.
-- **Teaching:** edit the course records in `teaching.html`, retaining institution, degree level, dates and exact responsibility. Distinguish independent teaching, co-teaching, tutorials and supervision. Update homepage highlights when relevant. Add evaluations or student material only if appropriate for public release.
+- **Teaching:** edit the course records in `teaching.html`, retaining institution, degree level, dates and exact responsibility. Use the two course-record categories **Course teaching** and **Tutorial teaching**, with the seminar included among the master's courses. Keep supervision and coordination in their own sections. Preserve the existing `#independent`, `#co-teaching` and `#tutorials` anchors so older links still work. Update homepage highlights when relevant. Add evaluations or student material only if appropriate for public release.
 - **Shared information:** navigation, contact details and footers are repeated in the HTML files. Apply shared changes consistently, retaining the correct `aria-current="page"` link on each main page. Keep the 404 links root-relative.
 - **Dates and metadata:** update each changed page's visible footer date, relevant `<title>`, description and Open Graph metadata. Set that page's `<lastmod>` in `sitemap.xml` to its actual substantive revision date (`YYYY-MM-DD`). Keep canonical URLs, Open Graph URLs and sitemap addresses aligned if a page URL changes.
 - **Appearance:** adjust shared styles in `assets/site.css`. Retain keyboard focus styles, readable contrast, image alternative text and the skip link. Check both desktop and narrow mobile layouts after changes.
