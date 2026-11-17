@@ -121,8 +121,12 @@ dd { margin-left: 0; }
 .teaching-overview { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3.5rem; margin-bottom: 3.8rem; }
 .award-block { border-top: 3px solid var(--accent); background: var(--soft); padding: 2rem; }
 .award-block .eyebrow { margin-bottom: 1rem; }
-.award-block h2 { font-size: 2rem; }
+.award-block h2 { font-size: 1.65rem; }
 .award-block > p:not(.eyebrow) { font-size: .87rem; }
+.award-list { margin-top: 1rem; margin-bottom: 1.3rem; }
+.award-entry h3 { font-size: 1.4rem; line-height: 1.4; margin-bottom: .6rem; }
+.award-entry p { margin-bottom: 0; }
+.award-entry + .award-entry { border-top: 1px solid var(--line); padding-top: 1.1rem; margin-top: 1.25rem; }
 .award-block .award-detail { border-top: 1px solid #c7d0c3; padding-top: 1.1rem; margin-bottom: 0; color: var(--muted); }
 .teaching-summary { align-self: center; color: var(--muted); }
 .course-section + .course-section { margin-top: 3.2rem; }
