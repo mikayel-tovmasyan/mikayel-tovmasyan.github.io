@@ -2,7 +2,7 @@
 
 A lightweight academic website for [mikayel-tovmasyan.github.io](https://mikayel-tovmasyan.github.io), presenting research and teaching with equal prominence. It uses ordinary HTML and shared CSS, with no JavaScript, third-party fonts, analytics, framework, package installation or build step. Abstracts expand using native HTML `<details>` elements.
 
-The academic content and downloadable PDF are based on the authoritative CV, version 44, dated **November 18, 2026**. Original CV sources, reference CVs and private working materials are kept outside this repository. Research follows the candidate's approved scope: the job-market paper has its own section, the electoral-turnovers and education projects appear under **Work in progress**, and the biodiversity and rent-control projects are omitted. Preserve this scope when updating the website. All eleven conference and seminar entries explicitly identify presenter or presenter-and-discussant roles, including both roles for Mannheim in 2023.
+The academic content and downloadable PDF are based on the authoritative CV, version 46, dated **November 20, 2026**. Original CV sources, reference CVs and private working materials are kept outside this repository. Research follows the candidate's approved scope: the job-market paper has its own section, the electoral-turnovers and education projects appear under **Work in progress**, and the biodiversity and rent-control projects are omitted. Preserve this scope when updating the website. All eleven conference and seminar entries explicitly identify presenter or presenter-and-discussant roles, including both roles for Mannheim in 2023.
 
 ## View locally
 
