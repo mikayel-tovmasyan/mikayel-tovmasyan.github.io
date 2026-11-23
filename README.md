@@ -1,6 +1,6 @@
 # Mikayel Tovmasyan — academic website
 
-A lightweight academic website for [mikayel-tovmasyan.github.io](https://mikayel-tovmasyan.github.io), presenting research and teaching with equal prominence. It uses ordinary HTML and shared CSS, with no JavaScript, third-party fonts, analytics, framework, package installation or build step. Abstracts expand using native HTML `<details>` elements.
+A lightweight academic website for [mikayel-tovmasyan.github.io](https://mikayel-tovmasyan.github.io), presenting research and teaching with equal prominence. It uses ordinary HTML and shared CSS, with no JavaScript, third-party fonts, analytics, framework, package installation or build step. Paper abstracts and descriptions are displayed directly on the Research page.
 
 The academic content and downloadable PDF are based on the authoritative CV, version 46, dated **November 20, 2026**. Original CV sources, reference CVs and private working materials are kept outside this repository. Research follows the candidate's approved scope: the job-market paper has its own section, the electoral-turnovers and education projects appear under **Work in progress**, and the biodiversity and rent-control projects are omitted. Preserve this scope when updating the website. All eleven conference and seminar entries explicitly identify presenter or presenter-and-discussant roles, including both roles for Mannheim in 2023.
 
@@ -21,7 +21,7 @@ Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). Stop the server with
 | File | Purpose |
 | --- | --- |
 | `index.html` | Introduction, affiliation, research and teaching highlights |
-| `research.html` | Job-market paper, working papers, projects and expandable abstracts |
+| `research.html` | Job-market paper, work in progress and visible paper descriptions |
 | `teaching.html` | Teaching responsibilities, courses, supervision and award |
 | `cv.html` | CV download, education and appointments |
 | `404.html` | Friendly missing-page screen |
@@ -36,7 +36,7 @@ Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). Stop the server with
 ## Update content
 
 - **CV:** replace `assets/Mikayel_Tovmasyan_CV.pdf` with the approved current PDF, retaining the filename. Update the `?v=` query on every CV link in the HTML pages when replacing the PDF so browsers request the current file. Do not edit the original CV through this repository. Update the date and page count in `cv.html`, its description and Open Graph description in `<head>`, any changed education/appointment summaries, and the provenance date in this README.
-- **Research:** edit `research.html` and corresponding homepage highlights. Preserve the distinction between published, revise-and-resubmit, working-paper and work-in-progress statuses. Check journal names and coauthors against the authoritative record. Keep the job-market paper's `<summary>` and abstract inside its `<details>` element. Work-in-progress descriptions are displayed directly below their titles and coauthors using `<p class="paper-description">`. Use actual abstracts and public paper links; add local paper PDFs only when approved for release.
+- **Research:** edit `research.html` and corresponding homepage highlights. Preserve the distinction between published, revise-and-resubmit, working-paper and work-in-progress statuses. Check journal names and coauthors against the authoritative record. Keep the job-market paper abstract fully visible, with the Read paper button below it. Do not repeat its opening question above the abstract. Work-in-progress descriptions are displayed directly below their titles and coauthors using `<p class="paper-description">`. Use actual abstracts and public paper links; add local paper PDFs only when approved for release.
 - **Teaching:** edit the course records in `teaching.html`, retaining institution, degree level, dates and exact responsibility. Use the two course-record categories **Course teaching** and **Tutorial teaching**, with the seminar included among the master's courses. Keep supervision and coordination in their own sections. Preserve the existing `#independent`, `#co-teaching` and `#tutorials` anchors so older links still work. Update homepage highlights when relevant. Add evaluations or student material only if appropriate for public release.
 - **Shared information:** navigation, contact details and footers are repeated in the HTML files. Use `mikael.tov@gmail.com` for all website contact links and displayed email addresses. Apply shared changes consistently, retaining the correct `aria-current="page"` link on each main page. Keep the 404 links root-relative.
 - **Dates and metadata:** update each changed page's visible footer date, relevant `<title>`, description and Open Graph metadata. Set that page's `<lastmod>` in `sitemap.xml` to its actual substantive revision date (`YYYY-MM-DD`). Keep canonical URLs, Open Graph URLs and sitemap addresses aligned if a page URL changes.
@@ -57,7 +57,7 @@ With the preview server running, also run:
 python scripts/check_site.py --base-url http://127.0.0.1:8000/
 ```
 
-The script checks page metadata and landmarks, duplicate IDs, accessible link text, image alt attributes, local destinations/fragments, PDF signatures and, optionally, HTTP responses and content types. It does not validate academic claims, external-link availability or every accessibility requirement. Manually check navigation, keyboard focus, abstract expansion, portrait layout, CV download and paper links. Inspect mobile layouts for clipping. A basic Python server does not automatically serve the custom 404 page for missing URLs; open `/404.html` to preview its appearance and test real missing URLs after deployment.
+The script checks page metadata and landmarks, duplicate IDs, accessible link text, image alt attributes, local destinations/fragments, PDF signatures and, optionally, HTTP responses and content types. It does not validate academic claims, external-link availability or every accessibility requirement. Manually check navigation, keyboard focus, abstract visibility, portrait layout, CV download and paper links. Inspect mobile layouts for clipping. A basic Python server does not automatically serve the custom 404 page for missing URLs; open `/404.html` to preview its appearance and test real missing URLs after deployment.
 
 ## Publish only after explicit approval
 

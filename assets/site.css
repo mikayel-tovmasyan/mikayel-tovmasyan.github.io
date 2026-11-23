@@ -100,11 +100,7 @@ dd { margin-left: 0; }
 .paper-feature h2 { font-size: 2.25rem; }
 .coauthors { font-size: .88rem; color: var(--muted); line-height: 1.6; }
 .paper-status { display: inline-block; padding: .4rem .65rem; background: var(--paper); border-left: 2px solid #7c8769; font-size: .85rem; margin: 0 0 1.3rem; }
-.abstract { border-top: 1px solid #c7d0c3; margin-top: 1.7rem; padding-top: .5rem; }
-.abstract summary { cursor: pointer; padding: .6rem 0; font-weight: 600; font-size: .88rem; color: var(--accent); }
-.abstract summary::marker { color: var(--accent); }
-.abstract-text { padding-top: .6rem; font-size: .96rem; line-height: 1.8; }
-.abstract-text p:last-child { margin-bottom: .2rem; }
+.paper-feature .abstract-text { margin: 0 0 1.5rem; font-size: 1rem; line-height: 1.8; }
 .paper-section { margin-top: 3rem; }
 .paper-section > h2, .course-section > h2 { font-size: 1.85rem; border-bottom: 1px solid var(--line); padding-bottom: .9rem; }
 .paper-entry { padding: .7rem 0 1.1rem; }
